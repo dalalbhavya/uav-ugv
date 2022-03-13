@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>interiit22</name>
+  <version>0.0.0</version>
+  <description>The interiit22 package</description>
+  <maintainer email="maintainer@maintainer.com">maintainer</maintainer>
+  <license>TODO</license>
+  <depend>std_msgs</depend>
+  <build_export_depend>message_generation</build_export_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>joy</exec_depend>
+</package>
