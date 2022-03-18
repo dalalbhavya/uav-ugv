@@ -154,10 +154,10 @@
           <alwaysOn>true</alwaysOn>
           <updateRate>10.0</updateRate>
           <cameraName>depth_camera</cameraName>
-          <imageTopicName>/depth_camera/rgb/image_raw</imageTopicName>
+          <imageTopicName>/camera/rgb/image_raw</imageTopicName>
           <cameraInfoTopicName>/depth_cameracamera/color/camera_info</cameraInfoTopicName>
           <depthImageTopicName>/depth_camera/depth/image_raw</depthImageTopicName>
-          <depthImageInfoTopicName>/depth_cameracamera/depth/camera_info</depthImageInfoTopicName>
+          <depthImageInfoTopicName>/depth_camera/camera/depth/camera_info</depthImageInfoTopicName>
           <pointCloudTopicName>depth/points</pointCloudTopicName>
           <frameName>camera_link_optical</frameName>
           <pointCloudCutoff>0.4</pointCloudCutoff>
