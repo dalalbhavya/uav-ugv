@@ -2,20 +2,17 @@
 //just to test
 int main(int argc, char** argv)
 {
-	//initialize ros 
+	//initializing ros 
 	ros::init(argc, argv, "drdo_test_node");
 	ros::NodeHandle drdo_test_node;
 
-
-	//Rest of code here
-    
     //initialize control publisher/subscribers
     init_publisher_subscriber(drdo_test_node);
 
-    // wait for FCU connection
+    //waiting for Flight Controller connection
 	wait4connect();
 
-	//wait for used to switch to mode GUIDED
+	//waiting for mode to switch to GUIDED
 	wait4start();
 
 	//create local reference frame 
@@ -24,7 +21,8 @@ int main(int argc, char** argv)
     //request takeoff takeoff(float takeOffHieght)
 	takeoff(3);
 
-    //specify some waypoints 
+/*
+    //Waypoints
 	std::vector<gnc_api_waypoint> waypointList;
 	gnc_api_waypoint nextWayPoint;
 	nextWayPoint.x = 0;
@@ -53,7 +51,7 @@ int main(int argc, char** argv)
 	nextWayPoint.psi = 180;
 	waypointList.push_back(nextWayPoint);
 
-
+*/
     //specify control loop rate. We recommend a low frequency to not over load the FCU with messages. Too many messages will cause the drone to be sluggish
 	ros::Rate rate(2.0);
 	int counter = 0;

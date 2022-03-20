@@ -21,5 +21,25 @@ Solved by copying the links a new world file ```drdo_world1_cam.world```
 
 P.S. : This isssue is yet to be resolved in a more general way
 
+To perform a general testing of the control code of drone follow
+1. Open a new terminal and change the directory to ```~/catkin_ws/src/iq_sim/scripts``` and run
+```
+./startsitl.sh
+```
+
+2. Now open a new terminal and run
+```
+roslaunch iq_sim apm.launch
+```
+
+3. In a new terminal run
+```
+rosrun iq_gnc drdo_test
+```
+
+4. Now make the mode GUIDED by running the command
+```
+mode GUIDED
+```
 
 
