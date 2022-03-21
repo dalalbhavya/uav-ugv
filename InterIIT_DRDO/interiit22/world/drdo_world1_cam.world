@@ -43,6 +43,7 @@
       <gui fullscreen='0'>
         <camera name='user_camera'>
           <pose frame=''>0.799901 327.272 41.305 0 0.54 -2.23003</pose>
+          <!-- <pose frame=''>0.799901 327.272 40.05 0 0.54 -2.23003</pose> -->
           <view_controller>orbit</view_controller>
           <projection_type>perspective</projection_type>
         </camera>
@@ -162,7 +163,7 @@
 
           </sensor>
         </link>
-        <pose> -12.820319 307.976703 24 0.011338 0.135709 -2.161422</pose>
+        <pose> -12.820319 307.976703 22.51 0.011338 0.135709 -2.161422</pose>
       </model>  
     </world>
   </sdf>

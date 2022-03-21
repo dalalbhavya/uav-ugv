@@ -37,7 +37,7 @@ roslaunch iq_sim apm.launch
 rosrun iq_gnc drdo_test
 ```
 
-4. Now make the mode GUIDED by running the command
+4. Now make the mode GUIDED by running the following command in MAVProxy Terminal
 ```
 mode GUIDED
 ```

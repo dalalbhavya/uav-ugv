@@ -4,7 +4,7 @@
       <arg name="car_model" default="$(find prius_description)/urdf/prius.urdf"/>
       <param name="robot_description" textfile="$(arg car_model)"/>
       <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(find interiit22)/world/drdo_world1_cam.world"/>
+        <arg name="world_name" value="$(find interiit22)/world/drdo_world1ardu_cam.world"/>
         <arg name="gui" value="$(arg gui)"/>
         <arg name="verbose" value="true"/>
       <!-- more default parameters can be changed here -->
@@ -32,5 +32,5 @@
           <arg name="log_output" value="$(arg log_output)" />
       </include>
 
-      <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x -12.220319 -y 304.976703 -z 22.295580 -R 0.011338 -P 0.135709 -Y -2.161422 -model prius"/>
+      <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x -12.220319 -y 308.976703 -z 22.295580 -R 0.011338 -P 0.135709 -Y -2.161422 -model prius"/>
   </launch>

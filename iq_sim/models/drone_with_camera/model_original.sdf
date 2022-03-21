@@ -33,52 +33,7 @@
     		</cylinder>
     	</geometry>
     </visual>
-
-          <sensor name="camera" type="depth">
-        <pose>0 0 0 -1.57 0 0</pose>
-        <update_rate>20</update_rate>
-        <always_on>1</always_on>
-        <visualize>true</visualize>
-        <camera>
-          <horizontal_fov>1.047198</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-            <format>R8G8B8</format>
-          </image>
-          <clip>
-            <near>0.1</near>
-            <far>20</far>
-          </clip>
-        </camera>
-        <plugin name="depth_controller" filename="libgazebo_ros_openni_kinect.so">
-          <baseline>0.2</baseline>
-          <alwaysOn>true</alwaysOn>
-          <updateRate>10.0</updateRate>
-          <cameraName>depth_camera</cameraName>
-          <imageTopicName>/camera/rgb/image_raw</imageTopicName>
-          <cameraInfoTopicName>/depth_cameracamera/color/camera_info</cameraInfoTopicName>
-          <depthImageTopicName>/depth_camera/depth/image_raw</depthImageTopicName>
-          <depthImageInfoTopicName>/depth_camera/camera/depth/camera_info</depthImageInfoTopicName>
-          <pointCloudTopicName>depth/points</pointCloudTopicName>
-          <frameName>camera_link_optical</frameName>
-          <pointCloudCutoff>0.4</pointCloudCutoff>
-          <pointCloudCutoffMax>10.0</pointCloudCutoffMax>
-          <distortionK1>0.0</distortionK1>
-          <distortionK2>0.0</distortionK2>
-          <distortionK3>0.0</distortionK3>
-          <distortionT1>0.0</distortionT1>
-          <distortionT2>0.0</distortionT2>
-          <CxPrime>0</CxPrime>
-          <Cx>0</Cx>
-          <Cy>0</Cy>
-          <focalLength>0.0</focalLength>
-          <focalLength>0</focalLength>
-          <hackBaseline>0</hackBaseline>
-        </plugin>
-
-      </sensor>
-    <!-- <sensor name="cam" type="camera" >
+    <sensor name="cam" type="camera" >
       <pose>0 0 0.15 0 0 0</pose>
       <camera>
         <horizontal_fov>1.2</horizontal_fov>
@@ -102,7 +57,7 @@
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
         <frameName>camera_link</frameName>
       </plugin>
-    </sensor> -->
+    </sensor>
     </link>
     <joint name="camera_mount" type="fixed">
       <child>cam_link</child>
