@@ -50,7 +50,7 @@
   
       <model name="iris">
         <include>
-          <uri>model://drone_with_depth_camera</uri>
+          <uri>model://drone_with_camera</uri>
         </include>
         <pose> 108.849 -265.663 49.4752 0.045161 0.003268 1.588</pose>
       </model>  

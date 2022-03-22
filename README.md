@@ -106,6 +106,9 @@ We are using Cubic splines for smoothening of turns.
 
 ## References
 1. https://docs.px4.io/master/en/simulation/ros_interface.html
-2. https://competitions.codalab.org/competitions/18467
-3. https://github.com/Intelligent-Quads
-4. https://github.com/OpenDroneMap/ODM
+2. https://openaccess.thecvf.com/content_cvpr_2018_workshops/w4/html/Zhou_D-LinkNet_LinkNet_With_CVPR_2018_paper.html
+3. https://competitions.codalab.org/competitions/18467
+4. https://github.com/Intelligent-Quads
+5. https://github.com/OpenDroneMap/ODM
+6. https://bdataanalytics.biomedcentral.com/articles/10.1186/s41044-018-0035-y
+7. https://ardupilot.org/copter/docs/zigzag-mode.html
