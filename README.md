@@ -7,6 +7,7 @@ mkdir -p catkin_ws/src
 cd catkin_ws/src
 git clone https://github.com/dalalbhavya/uav-ugv.git
 catkin build
+source ../devel/setup.bash
 ```
 To run the world make sure to include the path in $GAZEBO_MODEL_PATH environment variable
 
@@ -37,9 +38,9 @@ To perform a general testing of the control code of drone follow
 ./startsitl.sh
 ```
 
-2. Now open a new terminal and run
+2. Now open a new terminal and run (replace last digit for respective world (e.g. drdo_test_2.launch for world2)
 ```
-roslaunch iq_sim apm.launch
+roslaunch interiit22 drdo_test_1.launch
 ```
 
 3. In a new terminal run
