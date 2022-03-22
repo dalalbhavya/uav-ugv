@@ -1,4 +1,13 @@
 # UAV guided UGV
+
+## Installation and setup
+Create a catkin workspace by running the following commands
+```
+mkdir -p catkin_ws/src
+cd catkin_ws/src
+git clone https://github.com/dalalbhavya/uav-ugv.git
+catkin build
+```
 To run the world make sure to include the path in $GAZEBO_MODEL_PATH environment variable
 
 ```src/InterIIT_DRDO/interiit22/models```
