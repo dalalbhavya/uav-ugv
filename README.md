@@ -44,3 +44,8 @@ mode GUIDED
 ```
 
 
+## References
+1. https://docs.px4.io/master/en/simulation/ros_interface.html
+2. https://competitions.codalab.org/competitions/18467
+3. https://github.com/Intelligent-Quads
+4. https://github.com/OpenDroneMap/ODM
