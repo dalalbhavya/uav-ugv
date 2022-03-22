@@ -6,7 +6,8 @@ To run the world make sure to include the path in $GAZEBO_MODEL_PATH environment
 by running the command in terminal
 ```
 echo $GAZEBO_MODEL_PATH
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:<your path>
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/catkin_ws/src/iq_sim/models
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/catkin_ws/src/InterIIT_DRDO/interiit22/models
 ```
 
 To install PX4-Autopilot use the commands
