@@ -1,5 +1,7 @@
 # UAV guided UGV
 
+## Presentation: (https://docs.google.com/presentation/d/14SBoSPBtUrPp43PPALbnM0FGVaOfveorzsXv51FzmBM/edit#slide=id.g11ed09688e2_0_10)[Link]
+
 ## Installation and setup
 Create a catkin workspace by running the following commands
 ```
